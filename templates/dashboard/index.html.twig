@@ -9,7 +9,6 @@
     <div>
         <span style="display:block;font-size:.72rem;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--g400);margin-bottom:6px;">Mon espace</span>
         <h1 style="margin-bottom:4px;">{{ ((user.prenom ~ ' ' ~ user.nom)|trim) ?: user.userIdentifier }}</h1>
-        <p>{{ user.email }} · <span style="color:{{ user.isVerified ? '#16a34a' : '#b91c1c' }};">{{ user.isVerified ? 'Compte vérifié ✓' : 'Email non vérifié' }}</span></p>
     </div>
     <a class="btn-outline btn-xs" href="{{ path('app_catalogue') }}" style="text-decoration:none;">Parcourir le catalogue</a>
 </div>

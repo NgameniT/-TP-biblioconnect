@@ -83,7 +83,7 @@
                     {% if isFavorite %}
                         <form method="post" action="{{ path('app_catalogue_unfavorite', {id: book.id}) }}">
                             <input type="hidden" name="_token" value="{{ csrf_token('unfavorite-book-' ~ book.id) }}">
-                            <button class="btn-outline btn-xs" type="submit" style="width:100%;justify-content:center;padding:9px;">🔖 Retirer des favoris</button>
+                            <button class="btn-outline btn-xs" type="submit" style="width:100%;justify-content:center;padding:9px;">Retirer des favoris</button>
                         </form>
                     {% else %}
                         <form method="post" action="{{ path('app_catalogue_favorite', {id: book.id}) }}">
